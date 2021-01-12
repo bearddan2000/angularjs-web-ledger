@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="ledger">
+  <div>
+    <ul ng-repeat="item in items">
+      <li ng-repeat="(key, val) in item">{{key}}: {{val}}</li>
+    </ul>
+    Total: {{total(items)}}
+  </div>
+</div>
+<script src="js/app.js" charset="utf-8"></script>
+<script src="js/mainController.js" charset="utf-8"></script>
+</body>
+</html>
